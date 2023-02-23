@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>criando elementos html com javascript</title>
+    <style>
+       
+    </style>
+
+    <script>
+ 
+        
+        const inicia=()=>{           
+            document.getElementById('btnAdd').addEventListener('click',function(){
+                adicionar()
+            })
+        }
+        const adicionar=()=>{
+            const lista = document.getElementById('listaElementos')            
+            const texto = document.getElementById('fnovo')
+            const li = document.createElement('li')
+            li.textContent = texto.value             
+            lista.appendChild(li)
+            texto.value=''
+            texto.focus            
+        }
+        
+        // carrega a função com os elementos após o carregamento da página
+        window.addEventListener('load',inicia)
+           
+    </script>
+
+</head>
+<body>
+
+    <input id="fnovo" type="text"><button id="btnAdd">adicionar</button><br/><br/>
+
+    <ul id="listaElementos">  
+    </ul>
+
+    
+</body>
+
+</html>

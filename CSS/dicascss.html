@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicas CSS</title>
+    <style>
+        textarea {
+            
+        }
+    </style>
+
+</head>
+<body onselect="return false">
+    <div>
+        <textarea id="w" name="w" rows="15" cols="100"  disabled="true">
+        Estás a dizer que as propriedades entre os {} vai ser atribuídas aos elementos com 
+        a classe circulo que se encontra dentro de um elemento com a classe circulo2.   
+
+        .circulo2 .circulo {
+          /* propriedades aqui */
+        }
+        
+        Por outro lado, quando tens:
+        
+        .circulo3.circulo {
+          /* propriedades aqui */
+        }
+        
+        Estás a dizer que as propriedades entre os {} vai ser atribuídas aos elementos que tenham
+         ambas as classes .circulo3 e .circulo.
+        </textarea>
+
+    </div>
+  
+</body>
+</html>

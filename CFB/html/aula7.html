@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <titLe>Aula 7 - Formatação de Tabelas com CSS - Casses</title>
+        <style type="text/css">
+            body{
+                background-color: #a7daff;
+            }
+            table{
+            /* definndo todas bordas as mesmas */
+                        border-collapse: collapse;     
+                        border-spacing: 0px;
+            } 
+            td{
+                        border: 1px solid #1c73dd; 
+                        padding: 2px 2px;
+            }
+
+            .tituloDaTabela, .subtit{
+                        background-color: 808080;
+                        text-align: center;
+                        height: 50px;
+                        vertical-align: middle;
+                        color: #ffffff;
+                        font-weight: 400px;
+                        font-size: 21px; 
+                        font-family: Arial;
+                        font-style: italic;
+            }
+            .subtit{
+                        background-color:#c0c0c0;
+                        height: 30px;
+                        color: #000000;
+                        font-size: 15px;   
+                        letter-spacing: 2px;
+            }
+            .colaborador, .salario{
+                        font-family: 'Times New Roman', Times, serif;
+                        color:#efeff1; 
+                        background-color: #d60b1c;
+                        padding-left: 5px;
+            }
+            .salario{   color:#ffffff;
+                        text-align: right; 
+                        padding-right: 5px;
+                        font-size: 14px;
+            }
+                            
+        </style>
+
+    </head>
+
+    <body>
+
+        <div>
+            <table width="500">
+                <tr>
+                    <td class="tituloDaTabela" colspan="2">Tabela de Coladoradores</td>
+                </tr>
+                <tr>
+                    <td class="subtit">Colaborador</td>
+                    <td class="subtit">Salário</td>       
+                </tr>
+                <tr>
+                    <td class="colaborador">Franciely Gomes</td>
+                    <td class="salario">R$ 3.200,00</td>
+                </tr>
+                <tr>
+                    <td class="colaborador">Sandra Gomes</td>
+                    <td class="salario">R$ 4.500,00</td>
+                </tr>
+                <tr>
+                    <td class="colaborador">Bartolomeu</td>
+                    <td class="salario">R$ 4.750,00</td>
+                </tr>
+                <tr>
+                    <td class="colaborador">Pedro Antônio</td>
+                    <td class="salario">R$ 13.000,00</td>
+                </tr>
+            </table>
+        </div>    
+        <div>
+            <p>1. Abacate 
+                É rico em ômega 6, 9 e 7, substâncias que equilibram o organismo, ajudando 
+                na perda de gordura. O abacate também contém vitamina E e sitosterol, 
+                um elemento que auxilia a controlar o estresse.
+            </p>
+            <p>
+                2. Abacaxi
+                A fruta é rica em vitamina A e B1 e ácido ascórbico, que ajuda no
+                processo de controle à inflamação. O abacaxi também tem alta concentração de água e fibras — o que auxilia no processo digestivo.
+            </p>    
+            <p>3. Acerola
+                Além de uma alta porcentagem de vitamina C, a acerola também contém 
+                grande quantidade de cálcio, ferro, fósforo, vitamina A, B1, B2 e B3.
+            </p>
+        </div>
+    </body>
+    
+
+</html>

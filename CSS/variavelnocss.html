@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis no CSS</title>
+    <link rel="stylesheet" href="comuns.css">
+    <link rel="stylesheet" href="variavelnocss.css"> 
+</head>
+<body>
+    <button class="btn">Comprar</button>
+    <div class="description">
+        <span>
+        variáveis no css? na verdade são "custom properties"
+        propriedades customizadas, se ela é declarada em 
+        uma determinada classe terá scopo local, porém os 
+        elementos filhos herdão do pai, também pode ser declarada 
+        com a pseudo classe :root {--nome-davariavel: seu-valor;}
+        nesse caso tem o scopo global.<br>
+        Para utilizar:  var(--variavel), mais detalhes
+            no link abaixo da alura.
+        </span><br>
+        <a href="https://youtu.be/ESMLqFWIEDQ" target="_blank">Vídeo - canal Marco Bruno</a>
+        <br>
+        <a href="https://www.alura.com.br/artigos/construa-css-magico-variaveis-nativas?gclid=CjwKCAjw_b6WBhAQEiwAp4HyIMjZFC4chmEVlZBLZGAAh_6WrBtp-vrRmpPPuSmA5kknxzB2TLHuNBoCAzkQAvD_BwE"
+        target="_blank">Link Alura sobre CSS Custom Properties</a>
+   </div>   
+</body>
+</html>

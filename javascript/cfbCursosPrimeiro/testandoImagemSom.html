@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	
+	<style>
+		.imagens{height: 180px;}
+		.imagens:hover{cursor: pointer;}
+	</style>
+	<script>
+		var prisom=false
+		var music=''
+
+	</script>
+
+</head>
+
+<body>
+	<script>
+		//const music = new Audio("none") ;
+
+		tocaAudio=(elemento)=>{
+			if(prisom) music.pause()
+			const item=parseInt(elemento.substring(7))
+			const fileA=imagens[item].audio
+			music = new Audio(fileA);
+			music.play()
+			prisom=true			
+		}
+		const imagens=[]
+		//Estrutura de atribuição imagem
+		var novaDiv = document.createElement("div");
+		imagens.push('--')				
+		for(var i = 1; i <=3; i++){
+				//cria um objeto img com um src e um id
+				var img = {
+					src:   "img/i"+ i + ".jpg",
+					audio: "som/a"+ i + ".mp3",
+					id: i
+				};
+				//Objeto no array - guarda imagem e audio
+				imagens.push(img);
+				//Mas como eu coloco um audio para cada imagem quando o passar o mouseover
+				//front[i].setAttribute("audio",images[i].audio); 
+				// esse foi a pergunta de alguém no canal 
+				var novaimg = document.createElement("img");
+				novaimg.setAttribute('id','imagens'+i)
+				novaimg.setAttribute('class','imagens')
+				novaimg.setAttribute('src',img.src)
+				novaimg.addEventListener('click',function(){
+					tocaAudio(this.id)
+				})
+				
+				novaimg.addEventListener('mouseout',function(){
+					if(prisom) music.pause()
+				})
+				novaDiv.appendChild(novaimg)
+				document.body.appendChild(novaDiv)
+		}
+	
+
+	</script>
+
+</body>
+</html>
+

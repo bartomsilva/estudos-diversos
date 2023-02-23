@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>criando elementos html com javascript</title>
+    <style>
+       
+    </style>
+
+    <script>
+        // cria o elemento
+        var p=document.createElement("p")  
+        // cria o texto
+        var t=document.createTextNode('Curso de javascript CFB Cursos')
+        //p.textContent ='Curso de javascript CFB Cursos' // ou como acima
+
+        
+        const inicia=()=>{           
+            // insere o texto no elemento
+            p.appendChild(t)            
+            // insere o elmento no body
+            document.body.appendChild(p)
+        }
+        // carrega a função com os elementos após o carregamento da página
+        window.addEventListener('load',inicia)
+           
+    </script>
+
+</head>
+<body>
+   
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Objeto Window</title>
+    <style>
+        #painel{
+            border: 1px solid #000;
+            border-radius: 10px;
+            padding:15px;
+            width: 150px;
+            height:100px;
+        }       
+    </style>
+
+    <script>
+            var painel,jan
+            atualizaMedidas=()=>{
+                jan = {
+                    lI: window.innerWidth,
+                    aI: window.innerHeight, 
+                    lT: window.outerWidth,
+                    aT: window.outerHeight,
+                    sx: window.screenX,
+                    sy: window.screenY                
+                }
+            }
+
+            function info(){
+                atualizaMedidas()
+                painel.innerHTML = `LI=${jan.lI} AI=${jan.aI} 
+                                    LT=${jan.lT} AT=${jan.aT}
+                                    SX=${jan.sx} SY=${jan.sy}`
+            }
+
+            function inicia(){
+                painel = document.getElementById('painel')
+                document.getElementById('btn_info').addEventListener('click',info)
+            }
+
+            window.addEventListener('load',inicia)
+
+    </script>
+
+</head>
+<body>
+    <button id='btn_info'>Tamanho</button>    
+    <div id="painel"></div>
+
+    <div>
+        <p>LI= innerWidth - AI= innerHeight (interna) / total ( LT= outerWidth - AT= outerHeight)
+            / sx= screenX - sy= screenY ( retorna posicionamento da janela )</p>
+    </div>
+
+</body>
+
+</html>

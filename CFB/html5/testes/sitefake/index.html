@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br" id="a">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script lang="javascript">
+        function clicou(){
+        let container = document.getElementById('a');
+            container.style.backgroundImage = "url('rk.jpg')";
+            
+        }
+
+    </script>
+    <style>
+        html {
+            background-color: #0078ff;
+            margin: 0px;
+            padding: 0px;
+
+        }
+        body{
+            background-color: rgb(255, 255, 255);
+            margin: 0 auto;
+            margin-top: 30px;
+            width: 450px;
+            height: 630px; 
+            border-radius: 7px;                  
+        }
+        #imagensLogo{
+            display: flex;
+            flex-direction: column;
+            margin-top: 32px;
+            width: 100%;
+            height: 90px;
+            padding-top: 20px;        
+        }
+        #logos {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            align-items: flex-start; 
+        }
+        #fsistema{
+            width: 190px;
+            margin-left: -20px;
+            margin-top: 3px;
+        }
+        #fusuario{
+            width: 90px;
+            margin-right: -20px;
+            margin-top:2px;
+        }
+        #botaoEntra{
+            width: 83px;
+            height:36px;
+            background-color: rgb(51, 135, 245);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 7px;
+            cursor: pointer;
+            text-decoration: none;            
+        }
+        #sEntra {
+            display: flex;
+            justify-content: flex-end;
+            padding: 5px 25px 0px 0px;
+        }
+        #corpo{
+            width: 100%;
+            height: 440px;
+        }
+        #corpo h1, h3{
+            color: rgb(75, 75, 75);
+            font-family: sans-serif;
+            margin: 20px;
+        }
+
+        #corpo h1{
+            font-size: 20px;
+        }
+        #corpo h3{
+            font-size: 15px;
+        }
+        #zeca {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #zeca h1{
+            color: red;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 400;
+            font-size: 30px;
+            text-shadow: #000 2px 2px 9px;
+            text-align: center;
+        }
+        
+
+    </style>
+
+
+</head>
+        <!-- 450 x 600 -->
+<body>
+    <section id="imagensLogo">
+        <div id="logos">
+            <img src="logo_sistema.png" id="fsistema">
+            <img src="logo_cliente.png" id="fusuario">
+        </div>           
+    </section>
+
+    <section id="corpo">
+        <div>
+            <h1>Login Fácil</h1>
+            <h3>Acesse o sistema</h3>
+        </div>
+        <div id="zeca">
+            <img src="zeca.png">
+            <h1>Pegue seu emprestimo garantido!!!"</h1>
+        </div>
+
+    </section>
+
+    <section id="sEntra">  
+        <div id="botaoEntra">
+            <a href="javascript:clicou()" target="_self">ENTRA</a>
+        </div>
+    </section>     
+
+    
+</body>
+</html>

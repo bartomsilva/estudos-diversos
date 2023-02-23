@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pb-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Bart Silva BR">
+    <meta name="description" content="comando e dicas do sobre git">
+    <title>Guit me salva</title>
+    <style>
+        p, span {font-size: 1.5em;}
+        li, a {
+            list-style: none;
+            text-decoration: none;
+        } 
+    </style>
+
+</head>
+<body>
+    <h1>O GUIT salva vidas</h1>
+    <hr/>
+    <span>Links: 
+        <li><a href="https://www.youtube.com/watch?v=kB5e-gTAl_s">Curso de Git - Canal: Dev Aprender "Jhonatan de Souza"</a></li>    
+        <li><a href="https://gist.github.com/leocomelli/2545add34e4fec21ec16">Lista de Comandos úteis do GUIT</a><li>
+    </span>
+    <hr/>
+    <p>
+    <p>git init  = inicializar o repositório</p>
+    <p>git status = relatório sobre/ commit / aquivos a incluir ou incluído ao controle de versão</p>
+    <p>git add . = inclui todos arquivos pendentes ao controle de versão</p>
+    <p>git add "nome do arquivo" = inclui esse arquivo ao controle de versão</p>
+    <p>git commit -m "nome identificando a versão" cria versões</p>
+    <p>ao executar o commit informa qual branch está sendo enviado e quais arquivos foram incluídos</p>
+    <p># Cancelar um commit</p>
+    <p>-> último commit = git reset HEAD~1</p>
+    <p>-> o número no final desfaz a quantidade de commit's</p>
+    <p># Configurar a conta</p>
+    <p>-> git config --global user.email xxxx@gmail.com</p>
+    <p>-> git config --global user.name "nSeuNome"</p>
+    <p># Salvar as credenciais no LINUX - permanente</p>
+    <p>-> git config credential.helper store</p>
+    <p>-> git push origin main</p>
+    <p># Salvar as credenciais no LINUX - temporário</p>
+    <p>-> git config credential.helper cache
+    <p>-> git push origin main</p>
+    <p># Subir os arquivos para o guithub</p>
+    <p>git push</p>
+    <p>-> é necessário prestar bem atenção para qual branch enviará!!!</p>
+    <p># Ver quais versões já foram adicionadas </p>
+    <p>-> git reflog</p>
+    <p># Voltar uma versão (navegar nas versões)</p>
+    <p>-> git reset --hard (numero da versão)</p>
+    <p># Branch - são tipo blocos de cópia dos código</p>
+    <p>-> git branch staging</p>
+    <p>-> trocar de branch</p>
+    <p>-> git checkout staging</p>
+    <p># MERGE localmente, primeiro voltar para branch a ser atualiada</p>
+    <p>-> usar o comando git merge (nome da branch de onde virá as atualizações)</p>
+    <p>-> antes de fazer o merge entrar na branch principal e fazer um pull do servidor</p>
+    <p>-> uma nova tarrefa criar uma branch atualizada temporária</a>
+    <p>-> git checkout -b nome-nova-brach nome-da-branch-base </p>
+    <p># MERGE em equipe PULL REQUEST no github</p>
+    <p></p>
+    <p></p>
+
+
+    
+</body>
+</html>

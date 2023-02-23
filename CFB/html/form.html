@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário</title>
+        
+        <style type="text/css">
+            #bodyy{
+                position: absolute; 
+                top: 70px;
+                left: 280px;  
+                /* margin: 0 auto;  funciona se o absolute não estiver*/
+                width: 352px; 
+                background-color: #eeeeee
+            }
+            #foto01 img {
+                position: absolute;
+                width:250px;
+                right: 10px;
+                top:70px;
+                
+            }
+            #fotoe02 img{
+                position: absolute;
+                width:250px;
+                left: 10px;
+                top:70px;     
+                       
+        }
+        label{
+            padding-left: 5px;
+            color: #606060;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .bt{
+            background-color: #c00000;
+            color: #ffffff;
+            width: 95px;
+            height: 28px;
+            cursor: pointer;
+            border-radius: 150%;
+         
+        
+        }
+        input:hover, select:hover, textarea:hover{
+            border: 2px solid #0000ff; }
+        input:focus, select:focus, textarea:focus{ background-color: #ff8080;}
+         
+        </style>
+    </head>
+
+    <body>
+        <div id="foto01">
+            <img src="Arquivos/fotos/e2.jpg"/>
+        </div>
+    
+        <div id="bodyy">
+            <form name="F_Aula" method="post" action="#">
+                <label>Nome:</label><br/>
+                <input type="text" name="F_Nome" size="31" maxlength="30"/><br/><br/>
+                <label>Senha:</label><br/>
+                <input type="password" nme="F_Senha" size="21" maxlength="20"><br/><br/>
+                <label>Qual esporte você pratica?</label><br/>
+                <input type="checkbox" name="F_Futebol" value="futebol"/><label>Futebol</label><br/>
+                <input type="checkbox" name="F_Natacao" value="natacao"/><label>Natação</label><br/>
+                <input type="checkbox" name="F_Basquete" value="basquete"/><label>Basquete</label><br/><br/>
+            
+                <label>Possui Veículo?</label><br/>
+                <input type="radio" name="F_Veiculo" value="s"/><label>SIM</label><br/>
+                <input type="radio" name="F_Veiculo" value="n"/><label>NÃO</label><br/><br/>
+
+                <label>Estado:</label><br/>
+                <select name="F_Estado">
+                    <option value="MG">Minhas Gerais</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="BA">Bahia</option>
+                    <option value="RJ">Rio de Janeiro</option>                
+                </select><br/><br/>
+                <label>Comentários:</label><br/>
+                <textarea name="F_Comentário" cols="45" rows="5" maxlength="225"></textarea><br/><br/>
+                <input type="submit" value="Enviar" class="bt"/>
+                <input type="reset" value="Limpar" class="bt" />
+                <input type="button" value="script" class="bt" />
+                
+            </form> 
+        </div>
+        <div id="fotoe02">
+            <img src="Arquivos/fotos/e1.jpg"/>
+        </div>    
+
+
+    </body>
+
+
+<html>
+

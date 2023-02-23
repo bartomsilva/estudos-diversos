@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 51 Java Script</title>
+</head>
+<style>
+    #quad{
+        border: 1px solid #000;
+        border-radius: 5%;
+        background-color: tomato;
+        width: 100px;
+        height: 100px;
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;        
+    }
+</style>
+
+<body>
+    <h1>Recursividade</h1>
+    <div id="quad">A</div>   
+
+    <script>
+        var obj=document.getElementById("quad")
+        var ang=0
+        var anima
+        var parada=10
+
+        function gira(){
+            obj.style.transform="rotate("+ang+"deg)"
+            obj.innerHTML=parada
+            ang++
+            if (parada==0) return 
+            if(ang>360){
+                ang=0;
+                parada--
+            }        
+            anima=requestAnimationFrame(gira)
+        }
+        gira()
+    </script>
+</body>
+</html>

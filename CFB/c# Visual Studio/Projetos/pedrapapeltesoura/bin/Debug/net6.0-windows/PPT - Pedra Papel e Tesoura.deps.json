@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "PPT - Pedra Papel e Tesoura/1.0.0": {
+        "runtime": {
+          "PPT - Pedra Papel e Tesoura.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PPT - Pedra Papel e Tesoura/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

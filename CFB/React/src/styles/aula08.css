@@ -1,0 +1,24 @@
+.caixa{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.caixa a{
+    text-decoration: none;
+    color:#f00;
+}
+
+.caixa a:hover{
+    background-color: red;
+    color:white;
+}
+
+.texto {
+    color: #1a8c2f;
+    font-size: 2rem;    
+}
+h1,
+h2{
+    margin:0;
+}

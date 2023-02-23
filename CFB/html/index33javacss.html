@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 33 - Java CSS</title>
+
+    <!-- javascritp interno -->
+    <script lang="javascript">
+        function config(){
+        document.getElementById("aula").style.width="300px";
+        document.getElementById("aula").style.color="#000000";
+        document.getElementById("aula").style.backgroundColor="#ff5070";
+        document.getElementById("aula").style.fontSize ="18px";
+        avisoEstoque();
+    }
+    </script>
+    <!-- Arquivo java externo -->
+    <script type="text/javascript" src="aula33.js"></script>
+
+</head>
+
+<body onload="config()">
+
+    <div id="aula">
+        <p>Teste</p>
+        <p> a soma entre (10 e 5 ) dá : 
+        <script>soma(10,5)</script></p>
+    </div>
+
+        <p> a soma entre (15 e 5 ) dá : 
+        <script>soma(15,5)</script></p><br/>
+        <p>Hojé é 
+            <!-- java script inline -->
+            <script>document.write(dataExtensso())</Script></p>
+
+        <p>Hojé é 
+        <script>dataExtensso("i")</Script></p>
+
+        <select name="select" onchange="troca(value)">
+            <option value="1">Azul</option>
+            <option value="2">Vermelho</option>
+        </select>
+        <br/>
+        
+
+    <table width="450" border="1" cellspacint="0" id="tb_produtos">
+        <tr bgcolor="#CCCCCC" id="cabecalho">
+            <td align="center"><strong>Produtos  </strong></td>
+            <td align="center"><strong>Quantidade</strong></td>
+            <td align="center"><strong>Valor R$  </strong></td>
+        </tr>
+        <tr id="linha1">
+            <td>Mouse</td>
+            <td>100</td>
+            <td>25,00</td>
+        </tr>
+        <tr id="linha2">
+            <td>Teclado</td>
+            <td>51</td>
+            <td>30,00</td>
+        </tr>
+        <tr id="linha3">
+            <td>Monitor</td>
+            <td>85</td>
+            <td>300,00</td>
+        </tr>
+        <tr id="linha4">
+            <td>CPU</td>
+            <td>30</td>
+            <td>450,00</td>
+        </tr>
+    </table>    
+
+    </body>
+
+</html>

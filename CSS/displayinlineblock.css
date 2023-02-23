@@ -1,0 +1,36 @@
+.example {
+    color:#fff;
+    
+    /* display: flex; */
+    /* justify-content: space-between;      */
+    text-align: justify;
+}
+.example::after {
+    content: "";
+    display: inline-block;
+    width: 100%; 
+} 
+
+.example-item {    
+    width: 25%;
+    height: 150px; 
+    
+    /* display: block;
+    text-align: center; */
+    display: inline-block;
+    text-align: center;
+    
+}
+.example-item_first {
+    background-color: #FAA116;
+}
+.example-item_second {
+    background-color: #57C7C3;
+}
+.example-item_third {
+    background-color: #3b97d3;
+    
+}
+p{
+    text-align: center;
+}

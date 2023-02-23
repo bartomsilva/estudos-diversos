@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 35 - Menu DropDown</title>
+    <script lang="javascript">
+
+        function inicializa(){
+
+        document.getElementById("m1").addEventListener("mouseover", mostraS1);
+        document.getElementById("m2").addEventListener("mouseover", mostraS2);
+
+        document.getElementById("s1").addEventListener("mouseout", escondeSub);
+        document.getElementById("s2").addEventListener("mouseout", escondeSub);
+
+        }
+
+        function mostraS1(){
+            document.getElementById("s1").style.visibility="visible";
+            document.getElementById("s2").style.visibility="hidden";
+        }
+        function mostraS2(){
+            document.getElementById("s2").style.visibility="visible";
+            document.getElementById("s1").style.visibility="hidden";
+        }
+
+        function escondeSub(){
+            s1.style.visibility="hidden";
+            s2.style.visibility="hidden";    
+        }
+
+    </Script>
+
+    <style>
+        .menu{
+            background-color: #ccc;
+            width: 95px;
+            height: 20px;
+            border-right-style: solid;
+            border-right-width: 1px;
+            border-right-color: rgb(255, 255, 255);
+            padding-left: 5px ; 
+        }
+        .sub{
+            background-color: #999;
+            width: 95px;
+            padding-left: 5px;   
+            visibility: hidden;
+        }
+
+        #m1 {
+            position:absolute;
+            top: 0;
+            left: 0;
+        }
+        #m2 {
+            position:absolute;
+            top: 0;
+            left:101px;            
+        }
+        #s1 {
+            position:absolute;
+            top:25px;
+            left:0;
+        }
+        #s2 {
+            position:absolute;
+            top:25px;
+            left:101px;            
+        }
+        
+    </style>
+
+</head>
+
+<body onload="inicializa()">
+    <div class="menu" id="m1">
+        ( Google )       
+    </div>
+    <div class="sub" id="s1">
+        <a href="https://www.youtube.com/" target="_blank" >youtube</a><br/>
+        <a href="https://www.gmail.com/" target="_blank">gmail</a><br/>
+        <a href="https://www.google.com.br/maps/" target="_blank">maps</a><br/>
+    </div>
+    <div class="menu" id="m2">
+        ( Transportes )
+    </div>    
+    <div class="sub" id="s2">
+        carro<br/>
+        avião<br/>
+        navio<br/>
+    </div>    
+</body>
+</html>

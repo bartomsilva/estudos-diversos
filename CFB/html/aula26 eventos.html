@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Aula 9 Javascript</title>
+
+        <script lang="javascript">
+            
+            function cump(){
+            
+                console.log("seja bem vindo");
+        
+            }
+
+            function clica(){
+                console.log("fui clicado!!!");
+            }
+
+            function entra(){
+                console.log("fui selecionado");
+            }
+            function sai(){
+                console.log("perdi o foco");
+            }
+            function byby(){
+                alert("volte sempre");
+            }
+            function escreve(){
+                console.log("teste");
+            }
+
+                        
+        </script>
+    
+
+    </head>
+    
+    <body onload="cump()" onunload="byby()">
+
+            <input type="button" value="Aula JS - Eventos"  onclick="clica()"/>
+            <br/>
+            <input type="text" name="txt_aula"  onFocus="entra()"/>
+                
+        <p>
+            onload = carrega pagina
+            on click = quando clica
+        </p>
+        
+    </body>
+
+
+</html>

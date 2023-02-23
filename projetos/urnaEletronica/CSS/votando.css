@@ -1,0 +1,34 @@
+body {
+    width: 100%;
+    margin: 0 auto;    
+}
+
+.headVotando {
+    text-align: center;
+}
+.voto {
+    display: flex;
+    justify-content: space-between;
+}
+
+.voto  div {
+    width: 49%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.botaov, .voto img {
+    margin-top: 10px;
+    border-radius: 15%;
+}
+
+.resultado {
+    text-align: center;
+    justify-content: center;
+}
+
+.resultadoE {
+    text-align: center;    
+}

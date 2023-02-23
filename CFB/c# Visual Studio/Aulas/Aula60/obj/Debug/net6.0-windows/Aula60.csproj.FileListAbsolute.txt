@@ -1,0 +1,17 @@
+C:\Users\DeusEhFiel\Desktop\Aulas\c#\Aulas\Aula60\obj\Debug\net6.0-windows\Aula60.csproj.AssemblyReference.cache
+C:\Users\DeusEhFiel\Desktop\Aulas\c#\Aulas\Aula60\obj\Debug\net6.0-windows\Aula60.Form1.resources
+C:\Users\DeusEhFiel\Desktop\Aulas\c#\Aulas\Aula60\obj\Debug\net6.0-windows\Aula60.csproj.GenerateResource.cache
+C:\Users\DeusEhFiel\Desktop\Aulas\c#\Aulas\Aula60\obj\Debug\net6.0-windows\Aula60.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DeusEhFiel\Desktop\Aulas\c#\Aulas\Aula60\obj\Debug\net6.0-windows\Aula60.AssemblyInfoInputs.cache
+C:\Users\DeusEhFiel\Desktop\Aulas\c#\Aulas\Aula60\obj\Debug\net6.0-windows\Aula60.AssemblyInfo.cs
+C:\Users\DeusEhFiel\Desktop\Aulas\c#\Aulas\Aula60\obj\Debug\net6.0-windows\Aula60.csproj.CoreCompileInputs.cache
+C:\Users\DeusEhFiel\Desktop\Aulas\c#\Aulas\Aula60\bin\Debug\net6.0-windows\Aula60.exe
+C:\Users\DeusEhFiel\Desktop\Aulas\c#\Aulas\Aula60\bin\Debug\net6.0-windows\Aula60.deps.json
+C:\Users\DeusEhFiel\Desktop\Aulas\c#\Aulas\Aula60\bin\Debug\net6.0-windows\Aula60.runtimeconfig.json
+C:\Users\DeusEhFiel\Desktop\Aulas\c#\Aulas\Aula60\bin\Debug\net6.0-windows\Aula60.dll
+C:\Users\DeusEhFiel\Desktop\Aulas\c#\Aulas\Aula60\bin\Debug\net6.0-windows\Aula60.pdb
+C:\Users\DeusEhFiel\Desktop\Aulas\c#\Aulas\Aula60\obj\Debug\net6.0-windows\Aula60.dll
+C:\Users\DeusEhFiel\Desktop\Aulas\c#\Aulas\Aula60\obj\Debug\net6.0-windows\refint\Aula60.dll
+C:\Users\DeusEhFiel\Desktop\Aulas\c#\Aulas\Aula60\obj\Debug\net6.0-windows\Aula60.pdb
+C:\Users\DeusEhFiel\Desktop\Aulas\c#\Aulas\Aula60\obj\Debug\net6.0-windows\Aula60.genruntimeconfig.cache
+C:\Users\DeusEhFiel\Desktop\Aulas\c#\Aulas\Aula60\obj\Debug\net6.0-windows\ref\Aula60.dll

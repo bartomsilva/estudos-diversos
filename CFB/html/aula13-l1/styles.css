@@ -1,0 +1,79 @@
+body {
+
+    background-image: url("fundo.gif");
+    background-repeat: repeat-x;
+    height: 150px;
+}
+.meufun {
+    top: 0px;
+    width: 770px;
+    height: 150px;
+}
+#logo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 150px;
+    height: 150px;
+}
+.btmenu {
+    position: absolute;
+    top: 96px;
+    left: 155px;
+    width: 167px;
+    height: 33px;
+}
+.btmaterial {
+    left: 322px;
+}
+.btsalas {
+    left: 489px;
+}
+.btmenu img {
+    border: 0px;
+}
+/* efeito no botão */
+/* #btmodulos img:hover, #btmaterial img:hover, #btsalas img:hover {
+        transform: scale(1.05); 
+    }  */
+.linkmenu {
+    text-decoration: none;
+    color: #a0a0a0;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.linkmenu:hover {
+    color: #333333;
+
+}
+#menu {
+    position: absolute;
+    top: 153px;
+    left: 0px;
+    width: 770px;
+    height: 25px;
+    text-align: right;
+    /* altura da linha foi posto o mesmo tamanho da largura da div  */
+    line-height: 25px;
+    word-spacing: 10px;
+    color: #a0a0a0;
+    font-family: arial;
+    font-size: 15px;
+}
+#banner {
+    position: absolute;
+    top: 179px;
+    left: 0px;
+    width: 770px;
+    height: 308px;
+}
+#banner img {
+    border-radius: 0px 0px 17px 0px;
+}
+#main {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    width: 770px;
+    margin-left: -385px;
+}

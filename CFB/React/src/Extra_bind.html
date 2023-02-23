@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bind</title>
+</head>
+<body>
+    <script>
+
+    function carro(){
+            let velMax=200
+            console.log(this)
+            console.log(this.cor)
+            console.log(this.marca)
+            console.log(this.modelo)
+        }
+        let detalhes={
+            cor: 'Branco',
+            marca: 'VW',
+            modelo: 'Golf'
+        }
+        let carrosdetalhes=carro.bind(detalhes)
+        carrosdetalhes()
+
+
+    </script>
+    
+</body>
+</html>
+

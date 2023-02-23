@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" name="course" id="course">
+    <button onclick="buscarCurso()">Busar</button>
+    <span id="res"></span>
+
+    <script>
+        const meusCursos = [
+            {
+                curso: "HTML e CSS",
+                descricao: "Dê os primeiros passos no mundo DEV.",
+                duracao: "1 mês",
+                valor: 500.00
+            },
+            {
+                curso: "JavaScript",
+                descricao: "Venha aprender programação.",
+                duracao: "2 meses",
+                valor: 900.00
+            },
+            {
+                curso: "APIsRest",
+                descricao: "Venha se aprofundar no universo Dev Web Full Stack",
+                duracao: "6 meses",
+                valor: 2000.00
+            },
+        ]
+
+        const buscarCurso = () => {
+            let nomecurso = document.getElementById('course').value
+            nomecurso = nomecurso.toLowerCase()
+            const result = meusCursos.find(el => el.curso.toLowerCase().indexOf(nomecurso))
+                         
+            document.getElementById('res').innerHTML = result
+            console.log(result)
+
+        }
+    </script>
+</body>
+
+</html>

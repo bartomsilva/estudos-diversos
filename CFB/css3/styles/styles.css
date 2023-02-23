@@ -1,0 +1,27 @@
+/* tag id classe */
+
+/* seltor por tag - todas */
+p{  color: #f00;
+    font-size: 20px;
+}
+
+/* seletor por id */
+#p1{    
+    color:#00f;    
+}
+
+/* classe  */
+.txt{
+    color:#080;
+    font-size: 30px;
+
+    /* peso da fonte (negrito) */
+    font-weight:lighter;
+
+}
+
+/* formatação com agrupamento de seletores */
+h4,h5,h6{   color:#800;
+            font-size: 15px;
+}
+

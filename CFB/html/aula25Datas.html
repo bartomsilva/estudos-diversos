@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title> Aula 8 Javascript</title>
+        <script lang="javascript">
+            
+            var dataAtual = new Date();
+
+            var mesesAno=["Janeiro","Fevereiro","Março","Abril",
+            "Maio","Junho","Julho","Agosto","Setembro","Outubro",
+            "Novembro","Dezembro"];
+
+            var diaSemana=["Domingo","Segunda","Terça","Quarta","Quinta","Sexta","Sábado"];
+
+            let ndiaSemana=dataAtual.getDay();
+            let nMes = dataAtual.getMonth();
+
+            document.write("Dia da Semana = "+diaSemana[ndiaSemana]+"<br/>");
+            document.write("Dia = "+dataAtual.getDate()+"<br/>");
+            document.write("Mes = "+mesesAno[nMes]+"<br/>");
+            document.write("Ano Corrente = "+dataAtual.getFullYear()+"<br/>");
+
+            function mrelogio(){
+                var tempo = new Date();
+                var hora = tempo.getHours();
+                var min = tempo.getMinutes();
+                var seg = tempo.getSeconds();
+
+                hora = (hora<10?"0"+hora:hora);
+                min  = (min<10?"0"+min:min);
+                seg  = (seg<10?"0"+seg:seg);
+
+                var xxhoras = hora+":"+min+":"+seg;
+                document.frel.rel.value=xxhoras;
+                setTimeout("mrelogio()","1000");
+            };
+
+        </script>
+        <style type="text/css">
+            #relogio {
+                font-size: 38px;
+                text-align: center;
+                color: #ffffff;
+                background-color: rgb(26, 6, 249);
+            }
+
+
+        </style>
+
+
+
+    </head>
+    
+    <body onload ="mrelogio()">
+        
+        <form name="frel">
+            <input type="text" name="rel" size="10" id="relogio" />
+        </form> 
+
+
+    </body>
+
+
+
+</html>

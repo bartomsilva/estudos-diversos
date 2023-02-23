@@ -1,0 +1,27 @@
+#d1, #d2, #d3{
+    
+    border: 10px dashed,0 #000;
+    
+    /* margem interna do elemento */
+    padding: 50px;
+    /* background-color: #0F0; */
+    background-image: url(/marcador.png);
+}
+
+#d1{
+        /* desenha a borda sobre o background */
+        background-clip: border-box ;
+}
+#d2{
+        /* o background fica reduzido não é incluido junto 
+        a borda [e encolhido] */
+        background-clip: padding-box ;
+}
+    
+#d3{
+        /* o background é aplicado apenas no conteúdo */
+        background-clip: content-box ;
+}
+    
+
+        

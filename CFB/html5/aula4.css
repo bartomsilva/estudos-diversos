@@ -1,0 +1,66 @@
+html{
+    background-color: rgb(0, 1, 1);
+    margin: 0px;
+    padding: 0px;
+
+}
+body{
+    margin: auto;
+    width: 960px;
+    /* background-color: rgb(255, 238, 250);     */
+}
+
+#cab, footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #585;
+    padding: 10px 20px 10px 20px;
+    border-radius: 0px 0px 20px 20px;
+    color: #ffffff;        
+}
+#cab img{
+    position: absolute;
+    width: 180px;
+    margin-right: 5px;
+    padding-top: 30px;
+    align-self: flex-end;   
+    border-radius: 40% 10% 40% 10%; 
+} 
+
+footer{    
+    border-radius: 20px;
+}
+
+#parques {
+    background-color: rgb(202, 233, 255);
+    padding: 1px 10px 10px 10px;
+    border-radius: 20px;
+    
+}
+#parques img {
+    float: left;
+    margin-right: 10px;
+    width: 150px; 
+}
+#parques article {
+    border-bottom: 1px dashed rgb(5, 5, 5);    
+    padding-bottom: 10px;
+    height: 180px;  
+}
+#parques p {
+    text-align: justify;
+}
+#parques h2 {
+    color: #65650a;
+    font-size: 25px;
+    font-style: bold;    
+}
+#parques h3 {
+    color: #65650a;
+    font-size: 18px;;
+}
+
+.fix{
+    clear: both;        
+}
+

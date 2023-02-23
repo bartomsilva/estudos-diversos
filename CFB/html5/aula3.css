@@ -1,0 +1,52 @@
+
+body{
+    background-color: black;
+    width: 960px;
+    margin: auto;
+}
+
+span{
+    color: #fff;
+}
+
+header, nav, aside, section, footer{
+    background-color: #08C;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+
+}
+
+nav{
+    height: 480px;    
+    width: 130px;
+    margin: 15px 15px 15px 0px;
+    float:left; 
+}
+aside{
+    height: 480px;    
+    width: 130px;
+    margin: 15px 0px 15px 15px;
+    float:right;    
+}
+
+section{
+    height: 480px;    
+    width: 610px;
+    margin: 15px 0px 15px 0px;
+    float:left;     
+}
+section img{
+    width: 100%
+
+}
+
+footer{
+    height: 50px;    
+    width: 940px;
+    margin: 0px;
+    float: left;   
+} 
+    
+header{
+    height: 100px;    
+}

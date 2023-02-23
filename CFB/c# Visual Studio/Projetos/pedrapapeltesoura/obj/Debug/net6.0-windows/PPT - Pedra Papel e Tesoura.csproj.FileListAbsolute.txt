@@ -1,0 +1,18 @@
+C:\Users\DeusEhFiel\Desktop\Aulas\c#\Aulas\PPT - Pedra Papel e Tesoura\bin\Debug\net6.0-windows\PPT - Pedra Papel e Tesoura.exe
+C:\Users\DeusEhFiel\Desktop\Aulas\c#\Aulas\PPT - Pedra Papel e Tesoura\bin\Debug\net6.0-windows\PPT - Pedra Papel e Tesoura.deps.json
+C:\Users\DeusEhFiel\Desktop\Aulas\c#\Aulas\PPT - Pedra Papel e Tesoura\bin\Debug\net6.0-windows\PPT - Pedra Papel e Tesoura.runtimeconfig.json
+C:\Users\DeusEhFiel\Desktop\Aulas\c#\Aulas\PPT - Pedra Papel e Tesoura\bin\Debug\net6.0-windows\PPT - Pedra Papel e Tesoura.dll
+C:\Users\DeusEhFiel\Desktop\Aulas\c#\Aulas\PPT - Pedra Papel e Tesoura\bin\Debug\net6.0-windows\PPT - Pedra Papel e Tesoura.pdb
+C:\Users\DeusEhFiel\Desktop\Aulas\c#\Aulas\PPT - Pedra Papel e Tesoura\obj\Debug\net6.0-windows\PPT - Pedra Papel e Tesoura.csproj.AssemblyReference.cache
+C:\Users\DeusEhFiel\Desktop\Aulas\c#\Aulas\PPT - Pedra Papel e Tesoura\obj\Debug\net6.0-windows\PPT___Pedra_Papel_e_Tesoura.Form1.resources
+C:\Users\DeusEhFiel\Desktop\Aulas\c#\Aulas\PPT - Pedra Papel e Tesoura\obj\Debug\net6.0-windows\PPT - Pedra Papel e Tesoura.csproj.GenerateResource.cache
+C:\Users\DeusEhFiel\Desktop\Aulas\c#\Aulas\PPT - Pedra Papel e Tesoura\obj\Debug\net6.0-windows\PPT - Pedra Papel e Tesoura.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DeusEhFiel\Desktop\Aulas\c#\Aulas\PPT - Pedra Papel e Tesoura\obj\Debug\net6.0-windows\PPT - Pedra Papel e Tesoura.AssemblyInfoInputs.cache
+C:\Users\DeusEhFiel\Desktop\Aulas\c#\Aulas\PPT - Pedra Papel e Tesoura\obj\Debug\net6.0-windows\PPT - Pedra Papel e Tesoura.AssemblyInfo.cs
+C:\Users\DeusEhFiel\Desktop\Aulas\c#\Aulas\PPT - Pedra Papel e Tesoura\obj\Debug\net6.0-windows\PPT - Pedra Papel e Tesoura.csproj.CoreCompileInputs.cache
+C:\Users\DeusEhFiel\Desktop\Aulas\c#\Aulas\PPT - Pedra Papel e Tesoura\obj\Debug\net6.0-windows\PPT - Pedra Papel e Tesoura.dll
+C:\Users\DeusEhFiel\Desktop\Aulas\c#\Aulas\PPT - Pedra Papel e Tesoura\obj\Debug\net6.0-windows\refint\PPT - Pedra Papel e Tesoura.dll
+C:\Users\DeusEhFiel\Desktop\Aulas\c#\Aulas\PPT - Pedra Papel e Tesoura\obj\Debug\net6.0-windows\PPT - Pedra Papel e Tesoura.pdb
+C:\Users\DeusEhFiel\Desktop\Aulas\c#\Aulas\PPT - Pedra Papel e Tesoura\obj\Debug\net6.0-windows\PPT - Pedra Papel e Tesoura.genruntimeconfig.cache
+C:\Users\DeusEhFiel\Desktop\Aulas\c#\Aulas\PPT - Pedra Papel e Tesoura\obj\Debug\net6.0-windows\ref\PPT - Pedra Papel e Tesoura.dll
+C:\Users\DeusEhFiel\Desktop\Aulas\c#\Aulas\PPT - Pedra Papel e Tesoura\obj\Debug\net6.0-windows\PPT___Pedra_Papel_e_Tesoura.Properties.Resources.resources

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Objeto Window</title>
+    <style>
+       
+    </style>
+    <script>
+       var minhaJanela 
+       novaJanela=()=>{ 
+            minhaJanela=window.open("aula62tmp.html",'_blank', "width=300, height=300")           
+       }     
+       fechaJanela=()=>{ 
+            minhaJanela.close()
+       }     
+    </script>
+
+</head>
+<body>
+    <button onclick="novaJanela()">Abrir Janela</button>    
+    <button onclick="fechaJanela()">Fecha Janela</button>    
+
+</body>
+
+</html>

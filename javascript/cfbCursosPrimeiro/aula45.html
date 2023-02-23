@@ -1,0 +1,72 @@
+<!-- setAttribute
+hasAttribute
+removeAttribute
+getAttribute -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Manipulando atributos html por javascript</title>
+    <style>
+        #carro {
+            width:200px;
+            height:270px;            
+        }
+        #carro2 {
+            width:100px;
+            height:135px;            
+        }
+        .i1{
+            background-image: url('./img/c1.png')
+        }
+        .i2{
+            background-image: url('./img/c2.png');
+        }
+        .i3{
+            background-image: url('./img/c3.png');
+        }   
+        #carro,
+        #carr2 {
+            background-repeat: no-repeat;
+            background-size: auto;
+        }     
+    </style>
+    <script>
+        const trocaImagem=(imagem)=>{
+            var obj=document.getElementById("carro")
+            classe = 'i'+imagem
+            obj.setAttribute("class",classe)
+        }
+        const removeImagem=()=>{
+            document.getElementById("carro").removeAttribute("class")
+        }
+        const verifica=()=>{
+            if(document.getElementById("carro").hasAttribute("class")){
+                alert('Atributo class está na tag')
+            } else {
+                alert('sem atributo class')
+            }
+        }
+        const verifica2=()=>{
+            if(document.getElementById("carro").getAttribute("class")){
+                alert('Atributo class está na tag')
+            } else {
+                alert('sem atributo class')
+            }
+        }
+        
+    </script>
+
+</head>
+<body>
+    <button onclick="trocaImagem(1)">Thor</button>
+    <button onclick="trocaImagem(2)">Hulk</button>
+    <button onclick="trocaImagem(3)">SuperMan</button>
+    <button onclick="removeImagem()">Remover Imagem removeAttribute</button>
+    <button onclick="verifica()">Verificar com hasAttribute</button>
+    <button onclick="verifica2()">Verificar com getAttribute</button>
+    <hr/>
+    <div id="carro"></div>  
+</body>
+</html>

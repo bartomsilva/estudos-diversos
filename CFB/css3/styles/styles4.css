@@ -1,0 +1,16 @@
+body{
+        /* background-color: darkgray; */
+        background-image: url(/cfb.jpg), url(/marcador.jpg);
+        
+        background-size:200px , 100px;
+
+        background-repeat: no-repeat, repeat;
+        background-position: 200px 200px, 0px 0px;
+}
+p{      background-image: url(/marcador.png);
+        font-size: 50px;   
+        background-repeat: repeat-x;     
+
+  
+} 
+        
