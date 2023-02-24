@@ -21,15 +21,6 @@ export default function AppAula28() {
     const lPagina='http://localhost:3000?'+p
     window.open(lPagina,'_self') 
     
-    // o código original é esse abaixo
-    /*
-    if (p==1){
-      window.open("http://localhost:3000?1",'_self') 
-    } else if (p==2) {
-      window.open("http://localhost:3000?2",'_self') 
-    }
-    */
-
   }
 
   const retornarPagina=()=>{
