@@ -1,0 +1,25 @@
+.example{
+    color: #fff;
+    text-align: justify;
+}
+
+.example-item{
+    display: inline-block;
+    width: 25%;
+    height: 150px;
+    text-align: left;
+}
+.example-item-1{
+    background-color: orangered;    
+}
+.example-item-2{
+    background-color: burlywood;
+}
+.example-item-3{
+    background-color: blueviolet;
+}
+.example::after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+}

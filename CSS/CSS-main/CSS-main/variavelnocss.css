@@ -1,0 +1,15 @@
+:root { 
+    --global-color-background-btn: #9b59b6;     
+    --global-color-fonte-btn: #ecf0f1 ;    
+}
+
+.btn {
+    width: 200px;
+    height: 50px;
+    background-color: var(--global-color-background-btn);    
+    color: var(--global-color-fonte-btn);
+    border: none;
+    font-size: 1.8rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;    
+}

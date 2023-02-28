@@ -1,0 +1,28 @@
+/* 
+    como exemplo para estudo foi criada a classe abaixo para 
+    inserir o display: inline através do javascript no intutio
+    de deixar o exercício dinâmico e a oportunidade para praticar
+    o javascript junto.
+*/
+.aplicar-propriedade {
+    display: inline;
+}
+/* segue o restante das configurações */
+.example {
+    color:#fff;
+    text-align: center;
+}
+.example-item {
+    width: 33.333%;
+    height: 150px; 
+    line-height: 150px;
+}
+.example-item.first {
+    background-color: #FAA116;
+}
+.example-item.second {
+    background-color: #57C7C3;
+}
+.example-item.third {
+    background-color: #3b97d3;
+}

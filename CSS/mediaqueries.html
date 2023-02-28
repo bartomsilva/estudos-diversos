@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="tudo">
+        <h1>Web Design Responsivo</h1>
+
+        <small>Fonte: Wikipédia, a enciclopédia livre.</small>
+        <p>Web Design Responsivo (responsive web design) é uma abordagem para criar sites onde a experiência do usuário
+            é otimizada independente da forma a qual ele acessa o website, facilitando a navegação e scrolling em
+            qualquer caso.</p>
+        <p style="font-size: 16px; color: red">Para fins de demonstração a fonte deste parágrafo é fixa e igual a 16px
+        </p>
+
+        <p style="font-size: 24px;  color: red">Para fins de demonstração a fonte deste parágrafo é fixa e igual a 24px
+        </p>
+        <p>Em outras palavras, independente de usar um desktop ou um dispositivo móvel, independente da resolução ser
+            1024x780 ou 320x480, o conteúdo de um web site responsivo vai se adequar a este espaço, sem perder
+            informações e nem a capacidade de transmitir
+            o necessário ao usuário.</p>
+
+        <p>Há diversas técnicas que podem ser aplicadas para atingir um design responsivo com mais facilidade. Os três
+            principais são o uso de media queries, o layout fluído e as imagens flexíveis.</p>
+        <p>Redimensione a janela</p>
+    </div>
+
+    <!-- /.tudo -->
+    <style>
+        body {
+            background: #ececec;
+            margin: 0;
+        }
+
+        .tudo {
+            font: 16px/1.4 sans-serif;
+            font: 12px sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #e9f;
+        }
+
+        @media screen and (min-width: 500px) {
+            .tudo {
+                font-size: calc(16px + (8/1200) * 100 * 1vw);
+                background: rgb(255, 255, 18);
+            }
+        }
+    </style>
+</body>
+
+
+</html>

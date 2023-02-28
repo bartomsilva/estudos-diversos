@@ -1,0 +1,36 @@
+body{
+    min-height: 100vh;
+
+}
+main{
+    width: 600px;
+    height: 600px;
+    background-color: antiquewhite;
+    margin: 0 auto;
+    /* display: flex; */
+    /* align-items: flex-start; */
+}
+
+main > section{
+    width: 45%;
+    padding: 20px;
+}
+
+#sec1{
+    border: 3px solid orange;
+    background-color: blue;
+    margin: 10px auto;
+}
+
+#sec2{    
+    border: 3px solid rgb(255, 0, 0);
+    background-color: rgb(29, 243, 22);
+    margin: 10px auto;
+}
+
+#sec1 article{
+    background-color: yellow;
+}
+#sec2 div{
+    background-color: blueviolet;
+}

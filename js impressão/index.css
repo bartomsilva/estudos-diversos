@@ -1,0 +1,11 @@
+.text{
+    font-family: 'Courier New';
+    margin-left: 30px;
+}
+
+
+@media print{            
+    header h1{display: none;}
+    #btn-print{display: none;}
+} 
+

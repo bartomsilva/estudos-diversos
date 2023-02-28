@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Olhe com amor</title>
+    <link rel="stylesheet" href="guia.css" type="text/css">
+</head>
+<body>
+    <!--
+
+        id, class = são exenciais para dar nome, identificar os elementos na hora
+        de estilizar no css, use nomes sugestivos.....sem espaços e sibolos....
+        ex. titulo-principal  / logo 
+        o código tá espassado para melhor visibilidade de estudo
+
+     -->
+
+    <!-- nosso header -->
+    <header id="header">
+        <!-- o logo vai agui -->
+
+        <img id="imagem" class="imagem "src="bart-simpson.png" alt="imagem...">
+
+        <h1 id="titulo-principal" class="titulo-principal">Eu vou ser Dev Full Stack em 2023!</h1>
+
+    </header>
+
+    <!--
+        o que vamos fazer?
+        reduzir a imagem, deixar o título centralizado e a imagem 
+        no canto esquerdo com uma margem.....
+        nas sections filhas vamos definir cores diferentes para cada um e por 
+        duas imagens em cada section. centralizadas.
+     -->
+    
+    <section class="conteiner-pai">
+
+        <!-- as duas sections abaixo são filhas de conteiner-a porque estão dentro -->
+
+        <section class="filha-de-conteiner-pai" id="section-filha-a">
+            <!-- eu tenho dois filhos, duas imagens -->
+            <img class="photo" id="photo1" src="photo1.png" alt="photo">
+            <img class="photo" id="photo2" src="photo2.png" alt="photo">
+        </section>
+
+        <section class="filha-de-conteiner-pai" id="section-filha-b">
+            <!-- eu tenho dois filhos, duas imagens -->
+            <img class="photo" id="photo3" src="photo3.png" alt="photo">
+            <img class="photo" id="photo4" src="photo4.png" alt="photo">
+        </section>
+
+    </section>
+
+    <footer>
+        <h1>você DEV? então DEV estudar para ser DEV</h1>
+    </footer>
+    
+</body>
+</html>

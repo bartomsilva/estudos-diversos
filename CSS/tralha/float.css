@@ -1,0 +1,31 @@
+body{
+    background-color: bisque;
+}
+.paraghaph{
+    text-align: justify;
+    font-size: .7em;
+    margin: 0 5px;
+    /* para sair do contexto se tiver alguém flutuando */
+    clear: both;
+}
+ 
+.example{
+    width: 400px;
+    height: 200px;
+    color: rgb(251, 255, 6);
+    text-align: center;
+}
+.example-1{
+    background-color: brown;
+    float: left; 
+    /* margin: 10px; */
+}
+.example-2{
+    background-color: burlywood;
+    float: right;
+    /* margin: 10px;     */
+}
+section{
+    background-color: rgb(250, 197, 25);
+    overflow: hidden;
+}

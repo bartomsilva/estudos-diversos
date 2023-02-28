@@ -1,0 +1,87 @@
+/* removendo todas margins e paddings pré-existentes */
+* {
+    margin: 0; 
+    padding: 0; 
+}
+html{
+    font-size: 10.2px;
+}
+/* remove as bolinhas das li */
+ul,ol,li {
+    list-style: none;  
+}
+
+/* remove o texto abaixo das tag a  */
+a{
+    font-size: 1.6em;
+    text-decoration: none;  
+    color: rgb(255, 24, 8); 
+}
+
+/* 100% do viewport */
+body{
+    font-size: 1.6rem;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* config do header */
+header{
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+    background-color: black; 
+    color: #fff;
+}
+
+/* tamanho da imagem */
+#img{
+    height: 80%; 
+    margin-left: 5%;
+}
+nav{
+    margin-right: 5%;
+}
+/* display flex com quebra de linha wrap */
+#menu{
+    display: flex; 
+    flex-direction: row-reverse;
+    justify-content: flex-end
+    /* flex-wrap: wrap; */
+}
+/* home cursos contato área adm */
+/* aplicado nas li */
+.item-menu{
+    margin: 0px 0.25rem 0 0.25rem; 
+    text-align: center;
+    
+}
+/* aplicado as tag <a> criando maior área de contato */
+.item-menu a{
+    display: block; 
+    width:13rem;
+    padding: 1.5rem;   
+    color: #fff;
+}
+/* efeito no botão */
+.item-menu:hover{
+    cursor: pointer;
+    background-color: gray ;
+    border-radius: 3.125rem;
+}
+
+/* alinhamento do h1 */
+h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%)
+}
+section{
+    width: 100%;
+    height: 77.7rem;
+    background: #F3C558 url(background-hero.png);
+
+}

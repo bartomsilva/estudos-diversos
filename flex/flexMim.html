@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <img src="photo1.png" alt="">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Cursos</li>
+                <li>Contato</li>
+                <li>Adm</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem eveniet iure obcaecati ipsam consequatur
+            enim fuga doloribus molestiae pariatur! Consequuntur vel optio earum at non id laboriosam mollitia vero
+            corporis?</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic omnis fugiat a cum rem ipsa officia sunt
+            temporibus ullam et!</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ad odit quibusdam neque esse, facilis
+            delectus eos debitis enim mollitia inventore repellendus non odio voluptates excepturi hic a deleniti ex?
+            delectus eos debitis enim mollitia inventore repellendus non odio voluptates excepturi hic a deleniti ex?
+            Pariatur obcaecati repellendus est, asperiores vel deleniti provident dolor et.</div>
+    </main>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+            padding: 5px;
+            margin: 5px;
+            background-color: rgb(247, 255, 196);
+            border-radius: 19px;
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(0, 0, 0);
+            margin-bottom: 30px;
+        }
+
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+        body {
+            width: 100vw;
+            background-color: rgb(255, 255, 255);
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: center;
+            align-content: center;
+            gap: 10px;
+        }
+
+        main div {
+            width: 32%;
+            min-width: 250px;
+            min-height: 150px; 
+            background-color: rgb(255, 231, 231);
+            margin: 5px;
+            padding: 9px;
+        }
+
+        @media screen and (max-width: 600px) {
+            * {
+                font-size: calc(16px + (8/1200) * 100 * 1vw);
+            }
+
+            main div {
+                width: 95%;
+                min-width: 250px;
+            }
+
+            header {
+                justify-content: center;
+            }
+        }
+
+        @media screen and (max-width: 240px) {
+            main div {
+                width: 95%;
+                min-width: 0px;
+            }
+        }
+    </style>
+</body>
+
+</html>

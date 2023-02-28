@@ -1,0 +1,61 @@
+body {
+    padding-top: 125px;
+    padding-bottom: 200px;    
+}
+.header {
+    box-sizing: border-box;
+    padding: 20px 40px;
+    border-bottom: 1px solid #222f3e;
+    margin-bottom: 30px;    
+
+/* propósito do exercicio*/
+    position: fixed;
+    background-color: rgb(213, 212, 212);
+    width: 100%;
+    top: 0; 
+}
+.header-logo {
+    height: 50px;
+}
+.banner {
+    background-color: #5f27cd;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    line-height: 200px; 
+
+    /* apenas para fins didáticos */
+    /* propósito do exercicio*/
+    position: fixed;
+    right:3%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.button {
+    display:block;
+    height: 60px;
+    line-height: 60px;
+    opacity: 0.95;
+    text-align: center;
+    color: #fff;
+    text-decoration: nome;
+    text-transform: uppercase;
+    background-color: #1dd1a1;
+    /* propósito do exercicio*/
+    position: fixed;
+    bottom: 0;
+    width: 100%;    
+}
+    
+h1 {
+    padding-bottom: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+p{
+    margin: 0 auto 20px auto;
+    width: 60%;    
+    text-align: justify;
+}

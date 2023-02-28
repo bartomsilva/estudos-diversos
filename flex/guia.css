@@ -1,0 +1,109 @@
+*{
+    /* 
+        reset padrão
+
+    */
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+body{
+    width: 100%;
+    height: 600px;
+    background-color: aqua;
+}
+/* 
+    as cores de background, deixei para 
+    visualizar tamanho e forma dos elementos
+*/
+
+/* 
+    header ( largura e altura )
+*/
+header {
+    /* 
+        display flex - transforma o header em container flex
+        e seu conteúdo em flex itens, ao aplicar o display: flex
+        o padrão de alinhamento é em linha ( row )
+        se precisar mudar o comando é o flex-direciton: column
+    */
+    display: flex;
+    /* está colocado aqui mas row é o padrão */
+    flex-direction: row;
+
+    background-color: bisque;
+    width: 100%;
+    height: 160px;
+    /* alinhamento dos flex itens no eixo main axis */
+    justify-content: space-between;
+    /* 
+        alinhamento dos flex itens no eixo cross axis 
+        é o eixo cruzado....
+    */
+    align-items: center;
+}
+
+
+/* largura e altura da imagem */
+.imagem {
+    /* altura proporcional a altura */
+    width: 13%;
+}
+
+
+.titulo-principal{
+    /* alinhamento ao centro */
+    padding-right: 13%;
+    margin: 0 auto ;
+}
+
+.conteiner-pai{
+    width: 100%;
+    background-color: rgb(97, 221, 252);
+    /* também virando conteiner flex */
+    display: flex ;
+    /* aplicada para por uma section abaixo da outra */
+    flex-direction: column;
+    /* agora estando em coluna, o comportamento de */
+    /* justify-content e align-items - se inverte */
+    justify-content: center;
+    align-content: center;
+}
+/* é filha e pai? mãe né rsrsr brincadeiras a parte */
+/* quando aplicado o display: flex */
+/* aqui tudo se aplica as duas sections que tem a mesma classe */
+.filha-de-conteiner-pai{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: 0px auto;
+    border-radius: 19px;
+    box-shadow: 6px 5px 13px black;
+}
+
+/* personalizando cada uma com cor diferente */
+#section-filha-a{
+    margin-top: 20px;
+    background-color:rgb(231, 226, 226);
+}
+
+/* personalizando cada uma com cor diferente */
+#section-filha-b{
+    margin: 20px auto 20px auto;
+    background-color:rgb(231, 226, 226);
+}
+
+/* 
+    arrumando as photos pela classe
+*/
+.photo{
+    margin: 20px;
+}
+
+footer{
+    text-align: center;
+    line-height: 80px;        
+}
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions x Flex</title>
+
+    <!-- CSS -->
+    <style>
+        *,
+        *:before,
+        *:after {
+            margin: 0;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: antiquewhite;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        #father {
+            position: absolute;
+            /* a margin aplica-se ao próprio elemento  */
+            margin: 0;
+            /* vw e vh se refere ao viewport */
+            width: 100%;
+            height: 100%;
+            background-color: rgb(255, 10, 10);
+        }
+
+        #child {
+            position: absolute;
+            /* a margin aplica-se ao próprio elemento  */
+            /* tamanho relativos ao pai ( #father) */
+            width: 10%;
+            height: 10%;
+            left: 150px;
+            top: 15px;
+            /* transform: translate(-50%, -50%); */
+            background-color: aliceblue;
+        }
+        #child2{
+            position: absolute;
+            width: 40%;
+            height:40%;
+            background-color: blueviolet;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%); 
+        }
+    </style>
+
+</head>
+
+<body>
+    <header id="father">
+        <div id="child">aaaaaaaaaaaaa</div>
+        <div id="child2">bbbbbbbbbb</div>
+    </header>
+
+</body>
+
+</html>

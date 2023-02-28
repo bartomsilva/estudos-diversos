@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Example Menu</title>
+</head>
+
+<body>
+    <header>
+        <img id="img" src="bart-simpson.png" alt="">
+        <nav>
+            <ul id="menu">
+                <li class="item-menu">
+                    <a href="menu.html" target="_blank">Home</a>
+                </li>
+                <li class="item-menu">
+                    <a href="menu.html" target="_blank">Cursos</a>
+                </li>
+                <li class="item-menu">
+                    <a href="menu.html" target="_blank">Contato</a>
+                </li>
+                <li class="item-menu">
+                    <a href="menu.html" target="_blank">Área ADM</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>juntos somos mais fortes!</h1>
+        <section id="sec">
+            <div id="pai">
+                <div id="bixin">Lorem ipsum dolor sit amet co ut</div>
+            </div>
+        
+        </section>
+    </main>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+        }
+
+        header {
+            display: flex;
+            background-color: aliceblue;
+            width: 100%;
+            height: 20%;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #menu {
+            display: flex;
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        
+        #img {
+            height: 80%;
+        }
+        
+        #sec {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 10px 0;
+        }
+        
+        #sec > div {
+            width: 300px;
+            height: 300px;
+            border: 1px solid #fff;
+            background-color: rgb(229, 61, 10); 
+        }
+
+        #pai{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #bixin {
+            background-color: aqua;
+            width: 100px; 
+            height: 100px;          
+        }
+        .item-menu{
+            padding: 15px;
+        }
+        .item-menu:hover{
+            background-color: cyan;
+            border-radius: 50px;
+        }
+        </style>
+</body>
+
+</html>

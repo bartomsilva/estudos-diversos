@@ -1,0 +1,24 @@
+/* div com descrição */
+
+.description {
+    width: 50%;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(40%);
+    background-color: aliceblue;
+}  
+
+/* botão para aplicar a propriedade */
+.btaplicar button {
+    color:#fe02b7;
+    font-weight: bold;
+    background-color: chartreuse;
+    height: 3rem;
+    width: 250px;
+    border-radius: 20px;
+    margin-top:30px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
