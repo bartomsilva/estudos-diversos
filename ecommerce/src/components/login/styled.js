@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ContainerLogin = styled.div`
     width: 340px;
     height: 400px;
-    background-color: #ffb703;
+    /* background-color: #ffb703; */
     position: absolute;
     left: 50%;
     top:50%;

@@ -1,8 +1,8 @@
-import { useState, useContext } from "react";
-import { goToOrder, goToRegister } from "../router/coordinator";
+import { useState, useContext, useEffect } from "react";
+import { goToRegister } from "../router/coordinator";
 import useForm from "../hooks/useForm";
 import { ContainerLogin, Input, MessageError } from "./styled";
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { getAuth, signInWithEmailAndPassword, setPersistence, browserSessionPersistence, inMemoryPersistence } from "firebase/auth";
 import { EcommerceContext } from '../context/Context'
 import { useNavigate } from "react-router-dom";
 
@@ -11,28 +11,65 @@ export const UserLogin = () => {
     const [userMsg, setUserMsg] = useState({ type: "sucess", msg: "" })
 
     const navigate = useNavigate()
-    const { setIsLogin } = useContext(EcommerceContext)
-    const auth = getAuth();
+    const { loading, setLoading } = useContext(EcommerceContext)
 
-    const handleClick = (event) => {
+    const auth = getAuth();
+    const user = auth.currentUser;
+
+
+    useEffect(() => {
+        if (!loading && localStorage.getItem("token") !== null) {
+
+            navigate("/order")
+        }
+    }, [loading, navigate])
+
+    function handleClick(event) {
         event.preventDefault();
         const { email, password } = form
-        signInWithEmailAndPassword(auth, email, password)
-            .then((userCredential) => {
-                // Signed in
-                const user = userCredential.user;
-                // ...
+        // signInWithEmailAndPassword(auth, email, password)
+        //     .then((userCredential) => {
+        //         // Signed in
+        //         const user = userCredential.user;
+        //         // ...                
+        //         setLoading(true)
+        //         setUserMsg({
+        //             ...userMsg,
+        //             type: "sucess",
+        //             msg: "bem vindo!"
+        //         })
+        //         setTimeout(() => {
+        //             localStorage.setItem("token", "token")
+        //             setLoading(false)
+        //         }, 2000)              
+        //     })
+        //     .catch((error) => {
+        //         setUserMsg({
+        //             ...userMsg,
+        //             type: "error",
+        //             msg: "não foi possível efetuar o login!"
+        //         })
+        //     });
+
+        setPersistence(auth, browserSessionPersistence)
+            .then(() => {
+                setLoading(true)
                 setUserMsg({
                     ...userMsg,
                     type: "sucess",
                     msg: "bem vindo!"
                 })
-                setIsLogin(true)
-                goToOrder(navigate)
+                setTimeout(() => {
+                    localStorage.setItem("token", "token")
+                    setLoading(false)
+                }, 2000)
+
+                return signInWithEmailAndPassword(auth, email, password);
             })
             .catch((error) => {
-                // const errorCode = error.code;
-                // const errorMessage = error.message;
+                // Handle Errors here.
+                const errorCode = error.code;
+                const errorMessage = error.message;
                 setUserMsg({
                     ...userMsg,
                     type: "error",
@@ -42,6 +79,7 @@ export const UserLogin = () => {
 
     };
 
+
     return (
         <ContainerLogin>
             <form onSubmit={handleClick} onClick={() => {
@@ -49,7 +87,8 @@ export const UserLogin = () => {
                     ...userMsg,
                     type: "",
                     msg: ""
-                })}}>
+                })
+            }}>
                 <label>
                     Digite seu e-mail
                 </label>
@@ -76,6 +115,7 @@ export const UserLogin = () => {
             </form>
             <MessageError status={userMsg.type}>
                 <span>{userMsg.msg ? userMsg.msg : " "}</span>
+                <span>{user ? user.email : "não logado"}</span>
             </MessageError>
         </ContainerLogin>
     );

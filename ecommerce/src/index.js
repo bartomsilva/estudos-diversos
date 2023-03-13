@@ -6,11 +6,11 @@ import EcommerceProvider, { EcommerceContext } from './components/context/Contex
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
-    <EcommerceProvider>
-        <App />
-    </EcommerceProvider>
-  </BrowserRouter>
+  <EcommerceProvider>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </EcommerceProvider>
 );
 
 

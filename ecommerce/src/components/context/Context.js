@@ -3,11 +3,11 @@ export const EcommerceContext = createContext()
 
 export default function EcommerceProvider({ children }) {
 
-  const [isLogin, setIsLogin] = useState([])
+  const [loading, setLoading] = useState(false)
 
   const context = {
-    isLogin,
-    setIsLogin    
+    loading,
+    setLoading    
   }
   
   return (
