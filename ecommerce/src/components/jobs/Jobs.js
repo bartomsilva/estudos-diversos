@@ -1,24 +1,22 @@
-import { useEffect } from "react";
 import { useNavigate } from "react-router-dom"
-import UserConected from "../hooks/UserStatus";
+import userConected from "../hooks/UserStatus";
+import { Button, ContainerLogin } from "../login/styled";
+import { useContext } from "react";
+import { EcommerceContext } from "../context/Context";
+import { Fragment } from "../fragment";
 
+export function Jobs() {
 
-export function Jobs(){
-
-    useEffect(()=>{
-
-        console.log(UserConected())
-
-    })
-
-    const navigate=useNavigate()
-    return<>
-    <h1>jobs</h1>
-    <button onClick={()=>navigate('/order')}>votar para order</button>
-    {
-
-    }
-
-    </>
+    const navigate = useNavigate()
+    const {userId, userEmail}=useContext(EcommerceContext)
+        
+    return (
+        <ContainerLogin>
+            {/* <h1>jobs</h1>
+            <h4>{userId}</h4>
+            <h4>{userEmail}</h4> */}
+            <Button onClick={() => navigate('/order')}>votar</Button>
+            {Fragment()}
+        </ContainerLogin>)
 
 }

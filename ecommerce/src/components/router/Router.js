@@ -11,9 +11,8 @@ export default function Router() {
     const auth = getAuth();
 
     const PrivateRoute = ({ children, redirectTo }) => {
-        const isAuthenticated = localStorage.getItem('token') !==null
+        const isAuthenticated = localStorage.getItem('token')!==null
         return isAuthenticated ? children : <Navigate to={redirectTo} />
-        // return isLogin ? children : <Navigate to={redirectTo}/>
     }
 
     return (
@@ -21,9 +20,11 @@ export default function Router() {
             <Route path="/order" element={<PrivateRoute redirectTo="/">
                 <Order />
             </PrivateRoute>} />
-            <Route path='/' element={<UserLogin />} />
+            <Route path="/jobs" element={<PrivateRoute redirectTo="/">
+                <Jobs />
+            </PrivateRoute>} />
+            <Route path='/' element={<UserLogin />} />            
             <Route path="/register" element={<RegisterUser />} />
-            <Route path="/jobs" element={<Jobs />} />
         </Routes>
     )
 }

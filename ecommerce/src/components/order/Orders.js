@@ -1,28 +1,28 @@
-import { getAuth } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { EcommerceContext } from "../context/Context";
+import { Button, ContainerLogin } from "../login/styled";
 
 export function Order() {
 
     const navigate = useNavigate()
-    const auth = getAuth();
-    let user = auth.currentUser;
-    
+    const {auth,userId,userEmail } = useContext(EcommerceContext)
+        
     const logOff=()=>{
         auth.signOut()
         localStorage.removeItem('token')
         navigate("/")                   
     }
-    
-
-                 
+                     
     return (
-        <>
-            <p>{user?user.email :"não logado"}</p> 
+        <ContainerLogin>
+            <p>{userId}</p> 
+            <p>{userEmail}</p> 
             <p>com foco é fé</p>
-            <h1>e Deus acima de tudo!</h1>
-            <h1>com dedicação e esforço alcançamos o sucesso!</h1>
-            <button onClick={()=>navigate("/jobs")}>Jobs</button>
-            <button onClick={()=>logOff()}>Fazer Logoff</button>
-        </>
+            <h2>e Deus acima de tudo!</h2>
+            <p>com dedicação e esforço alcançamos o sucesso!</p>
+            <Button onClick={()=>navigate("/jobs")}>Order</Button>
+            <Button onClick={()=>logOff()}>Fazer Logoff</Button>
+        </ContainerLogin>
     )
 }

@@ -1,15 +1,18 @@
-import useForm from "../hooks/useForm";
-import { ContainerLogin, Input, MessageError } from "./styled";
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import { goToLogin, goToOrder } from "../router/coordinator";
-
+import { EcommerceContext } from "../context/Context";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import useForm from "../hooks/useForm";
+import { Button, ContainerLogin, Input, MessageError } from "./styled";
 
 export const RegisterUser = () => {
+    
+    const navigate=useNavigate()
+
     const [form, setForm] = useForm({ email: "", password: "", repassword: "" });
     const [userMsg, setUserMsg] = useState({type:"sucess", msg: "" })
-    const navigate=useNavigate()
+    const {auth}=useContext(EcommerceContext)
+    
 
     function checkError() {
         let result = true
@@ -41,7 +44,6 @@ export const RegisterUser = () => {
             return
         }
 
-        const auth = getAuth();
         const { email, password } = form
 
         createUserWithEmailAndPassword(auth, email, password)
@@ -52,8 +54,8 @@ export const RegisterUser = () => {
                     ...userMsg,
                     type: "sucess",
                     msg: "conta cadastrada com sucesso!"
-                })
-                goToOrder(navigate)
+                })                
+                navigate("/")
                 // ...
             })
             .catch((error) => {
@@ -90,8 +92,7 @@ export const RegisterUser = () => {
                     onChange={setForm}
                     type="email"
                     placeholder="E-mail"
-                    required
-                   
+                    required                   
                 />
                 <label>
                     Digite sua senha
@@ -113,8 +114,8 @@ export const RegisterUser = () => {
                     type="password"
                     placeholder="repita a senha"
                 />
-                <button>Criar conta</button>
-                <button onClick={()=>goToLogin(navigate)}>Já tenho conta!</button>
+                <Button>Criar conta</Button>
+                <Button onClick={()=>navigate("/")}>Já tenho conta!</Button>
             </form>
             <MessageError status={userMsg.type}>
                 <span>{userMsg.msg ? userMsg.msg : " "}</span>

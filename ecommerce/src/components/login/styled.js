@@ -4,6 +4,7 @@ export const ContainerLogin = styled.div`
     width: 340px;
     height: 400px;
     /* background-color: #ffb703; */
+    border: 1px solid rgba(0,0,0,0.5);
     position: absolute;
     left: 50%;
     top:50%;
@@ -24,24 +25,10 @@ export const ContainerLogin = styled.div`
         align-items: center;
         justify-content: center;
         background-color: white;
-
-        
-        button{
-            margin-top: 10px;
-            margin-bottom: 10px;
-            height: 40px;
-            padding: 10px;
-            border-radius: 0.25rem;
-            border: none;
-            cursor: pointer;
-            font-weight: 600;
-            :hover{
-                background-color: #a2d2ff;
-                color: #fff;
-            }
-          }
+                
+       
           label{
-              margin-top: 10px;
+              margin-top: 30px;
               margin-bottom: 10px;
               font-weight: 600;
             }
@@ -49,10 +36,11 @@ export const ContainerLogin = styled.div`
  
 `;
 
+
 export const Input = styled.input`
     cursor: pointer;
     width: 88%;
-    height: 30px;
+    min-height: 30px;
     padding-inline: 10px;
     text-align: center;
     border-radius: 20px;
@@ -66,10 +54,26 @@ export const Input = styled.input`
         background-color: #d0f4de ;
     }     
     
-  `;
+`;
 
+export const Button = styled.button`
+            margin-top: 10px;
+            margin-bottom: 10px;
+            height: 40px;
+            width: 150px;
+            padding: 10px;
+            border-radius: 0.25rem;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            :hover{
+                background-color: #a2d2ff;
+                color: #fff;
+            }
+         `
 export const MessageError = styled.div`
     
-    color: ${({ status }) => status === "error" ? "#ef233c" : "#83c5be"}
-    
-`
+    color: ${({ status }) => status === "error" ? "#ef233c" : "#83c5be"};
+   
+`;
+
