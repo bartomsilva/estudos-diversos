@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="criarGrid(minhasTurmas)">Turmas</button>
+
+    <main>
+        <div id="cards">
+
+        </div>
+
+        <p></p>
+
+    </main>
+
+    <script>
+        // array de objetos para testa a função
+        const minhasTurmas = [
+            {
+                turma: "Hipátia",
+                curso: "JavaScript",
+                inicio: "30/11/2022",
+                termino: "30/01/2023",
+                numeroAlunos: 150,
+                periodo: "Noturno",
+                concluida: false
+            },
+            {
+                turma: "Sibyla",
+                curso: "JavaScript",
+                inicio: "30/10/2022",
+                termino: "30/12/2022",
+                numeroAlunos: 200,
+                periodo: "Integral",
+                concluida: false
+            },
+            {
+                turma: "Curie",
+                curso: "HTML e CSS",
+                inicio: "15/09/2022",
+                termino: "15/10/2022",
+                numeroAlunos: 180,
+                periodo: "Noturno",
+                concluida: true
+            },
+            {
+                turma: "Zhenyi",
+                curso: "HTML e CSS",
+                inicio: "01/11/2022",
+                termino: "01/01/2023",
+                numeroAlunos: 80,
+                periodo: "Integral",
+                concluida: false
+            },
+            {
+                turma: "Clarke",
+                curso: "HTML e CSS",
+                inicio: "04/07/2022",
+                termino: "04/09/2022",
+                numeroAlunos: 200,
+                periodo: "Noturno",
+                concluida: true
+            },
+            {
+                turma: "Blackwell",
+                curso: "APIsRest",
+                inicio: "20/03/2022",
+                termino: "20/06/2022",
+                numeroAlunos: 100,
+                periodo: "Integral",
+                concluida: true
+            },
+            {
+                turma: "Elion",
+                curso: "APIsRest",
+                inicio: "12/01/2022",
+                termino: "12/06/2022",
+                numeroAlunos: 200,
+                periodo: "Noturno",
+                concluida: true
+            },
+            {
+                turma: "Burnell",
+                curso: "APIsRest",
+                inicio: "18/10/2022",
+                termino: "18/04/2023",
+                numeroAlunos: 90,
+                periodo: "Integral",
+                concluida: false
+            },
+        ]
+
+
+            // função que recebe o array e cria os cards lendo do arquivo de turmas
+            // e chamando a função interna addCard
+        function criarGrid($array) {
+            // se forem todas as turmas
+            $array.forEach(e => {
+                addCard(e.turma, e.curso, e.inicio, e.termino, e.numeroAlunos, e.periodo, e.concluida)
+            })
+    
+            // caso seja apenas uma turma específica
+         
+            function addCard(xTurma, xCurso, xInicio, xTermino, xNumAlunos, xPeriodo, xConcluido) {
+                const $cards = document.getElementById('cards')
+                const html =
+                    `
+                    <p class="nameClass">${xTurma}</p>
+                    <p class='card-caption'>Curso: <span class='card-descr'>${xCurso}</span></p>
+                    <p class='card-caption'>Inicio: <span class='card-descr'>${xInicio}</span></p>
+                    <p class='card-caption'>Término: <span class='card-descr'>${xTermino}</span></p>
+                    <p class='card-caption'>Número de Alunos: <span class='card-descr'>${xNumAlunos}</span></p>
+                    <p class='card-caption'>Período: <span class='card-descr'>${xPeriodo}</span></p>
+                    <p class='card-caption'>Concluído: <span class='card-descr'>${xConcluido?"sim":"não"}</span></p>
+                `
+                // criando nova div
+                const $newDiv = document.createElement('div')
+                $newDiv.innerHTML = html
+                $cards.appendChild($newDiv)
+            }
+        }
+
+    </script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .card-caption{
+            font-weight: 800;            
+        }
+        .card-descr{
+            font-weight: initial;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #cards {
+            display: flex;
+            flex-wrap: wrap;
+            width: 65vw;
+            height: 60vh;
+            gap: 6px;
+            background-color: black;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #cards div {
+            background-color: rgb(255, 217, 217);
+            width: 180px;
+            height: 150px;
+            padding: 5px;
+        }
+        h2{
+            margin-bottom: 5px;
+        }
+
+    </style>
+
+</body>
+
+</html>

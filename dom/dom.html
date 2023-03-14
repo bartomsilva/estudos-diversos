@@ -18,14 +18,13 @@
    
 
 </body>
-// document.querySelector("#teste").textContent="novo valor de ps atribuido via JS"
-// document.querySelector("#teste").style.fontSize = "50px";
-// document.querySelector("#teste").style.color = "red";
 
 <script>
+    // document.querySelector("#teste").textContent="novo valor de ps atribuido via JS"
+    // document.querySelector("#teste").style.fontSize = "50px";
+    // document.querySelector("#teste").style.color = "red";
 
-
-    // CRIANDO UM DIV que será um card dentro dos cards-container
+    // CRIANDO UMA DIV que será um card dentro dos cards-container
     // aqui lê qual elemento vou incluir as outras divs
     const obj = document.querySelector("#cards")
 
@@ -33,7 +32,7 @@
     let newDiv = document.createElement("div")
 
     // com a div criada mas ainda não adicionada
-    // vamos dar a ela uma class para que utilizaremos no css para estilizar 
+    // vamos dar a ela uma class para utilizaremos no css para estilizar 
     newDiv.setAttribute("class", "card-item")
 
     // vamos criar um elemento p para por dentro dessa nova div
@@ -50,7 +49,6 @@
 
     // e agora adicionar nossa nova div a div pai
     obj.appendChild(newDiv)
-
 
 </script>
 
